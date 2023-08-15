@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.header {
+    display: block;
+    height: 100px;
+}
+.nav {
+    padding-top: 30px;
+    padding-right: 5%;
+    float: right;
+}
+.hometext {
+    font-size: larger;
+    text-decoration: none; 
+    color: black;
+    float: right;
+    padding-right: 8%;
+}
+.hometext:hover {
+    color: rgb(148, 148, 148);
+}
+.homelogo:hover {
+    border-bottom: 1px solid black;
+}
+.left {
+    float: left;
+    width:20%;
+    padding-right: 10px;
+}
+.left a {
+    text-decoration: none;
+    color: rgb(148, 148, 148);
+}
+.left a:hover {
+    color: black;
+    border-color: rgb(148, 148, 148);
+}
+ul {
+    list-style-type: none;
+}
+li {
+    text-align: center;
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 4px;
+    line-height: 25px;
+}
+.partheading {
+    display: inline-block;
+    padding-bottom: 5px;
+}
+.partheading:hover {
+    border-bottom: 1px solid black;
+}
+.right {
+    padding: 20px;
+    text-align:center;
+    display: inline-block;
+    width: 80%;
+}
+.right p {
+    line-height: 30px;
+    margin: auto;
+    width: 60%;
+}
+@media only screen and (max-width: 850px) {
+    .left {
+        width: 100%;
+        padding-left: 25%;
+    }
+    .left li {
+        width: 50%;
+    }
+    .right {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .left {
+        padding-left: 15%;
+    }
+    .left li {
+        width: 70%;
+    }
+}
+@media only screen and (min-width: 401px) {
+    .homelogo {
+        display: none;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .hometext {
+        display: none;
+    }
+    .left {
+        padding-left: 5%;
+    }
+    .left li {
+        width: 90%;
+    }
+    .right {
+        padding: 0px;
+    }
+}
+@media only screen and (max-width: 290px) {
+    .logo {
+        max-height: 80px;
+    }
+}
+@media only screen and (max-width: 250px) {
+    .header {
+        height: 70px;
+    }
+    .logo {
+        max-height: 70px;
+    }
+}
